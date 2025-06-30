@@ -1,4 +1,4 @@
-const TodoNew = () =>{
+const TodoInput = () =>{
     return (
         <div className='todo-new'>
         <input type="text" className='todo-input' placeholder='Enter your task' />
@@ -6,4 +6,4 @@ const TodoNew = () =>{
       </div>
     )
 }
-export default TodoNew;
+export default TodoInput;
