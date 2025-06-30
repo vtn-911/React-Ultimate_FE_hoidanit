@@ -39,6 +39,9 @@
     box-shadow: 2px 2px 10px #ccc;
     border-radius: 5px;
 }
+.data-child{
+  padding: 5px 0;
+}
 
 .todo-image{
     text-align: center;
