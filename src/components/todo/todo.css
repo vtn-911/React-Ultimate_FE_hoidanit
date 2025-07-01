@@ -29,6 +29,7 @@
     font-weight: bold;
     border-radius: 5px;
     border-width: 0;
+    cursor: pointer;
     background-color: rgb(92, 92, 237);
 }
 .todo-data{
