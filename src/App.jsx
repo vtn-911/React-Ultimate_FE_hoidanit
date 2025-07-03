@@ -7,14 +7,24 @@ import { useState } from 'react'
 
 function App() {
   const [todoList,setTodoList] = useState ([
+    // mỗi một lần biến TodoList thay đổi thì thì ngay lập tức component TodoData sẽ thay đổi 
     {id: 1, name: "Learning React"},
     {id: 2, name: "watching youtube"}
   ])
   const hoidanit = "Nhipro"
-  const name = 'Tuyet Nhi'
-  const addNewTodo = () => {
-    alert(`call me ${name}`)
+
+  const addNewTodo = (name) => {
+    const newTodo = {
+      id: randomIntFromInterval(1,10000000),
+      name : name
+    }
+    setTodoList([...todoList,newTodo])
   }
+
+  const randomIntFromInterval = (min, max) => { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 
   return (
     <div className="todo-container">
