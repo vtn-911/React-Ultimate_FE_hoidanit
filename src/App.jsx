@@ -30,12 +30,31 @@ function App() {
       <div className="todo-title">Todo List</div>
       <TodoInput
         addNewTodo ={addNewTodo}/>
+
+
+    {todoList.length > 0  ?
       <TodoData
-        todoList = {todoList}
+        todoList = {todoList}  
       />
+    :
       <div className="todo-image">
         <img src={reactLogo} className='logo' />
       </div>
+    } 
+
+
+    {/* {todoList.length > 0 && Cách 1
+      <TodoData
+              todoList = {todoList}  
+            />
+    }
+
+    {todoList.length === 0 && 
+      <div className="todo-image">
+        <img src={reactLogo} className='logo' />
+      </div>
+    }   */}
+      
     </div>
   )
 }
