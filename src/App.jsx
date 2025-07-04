@@ -8,10 +8,9 @@ import { useState } from 'react'
 function App() {
   const [todoList,setTodoList] = useState ([
     // mỗi một lần biến TodoList thay đổi thì thì ngay lập tức component TodoData sẽ thay đổi 
-    {id: 1, name: "Learning React"},
-    {id: 2, name: "watching youtube"}
+    // {id: 1, name: "Learning React"},
+    // {id: 2, name: "watching youtube"}
   ])
-  const hoidanit = "Nhipro"
 
   const addNewTodo = (name) => {
     const newTodo = {
@@ -32,7 +31,6 @@ function App() {
       <TodoInput
         addNewTodo ={addNewTodo}/>
       <TodoData
-        name = {hoidanit}
         todoList = {todoList}
       />
       <div className="todo-image">

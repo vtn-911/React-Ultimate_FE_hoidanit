@@ -34,7 +34,7 @@
 }
 .todo-data{
     width: 400px;
-    min-height: 100px;
+    min-height: 30px;
     padding: 5px 10px;
     margin: 10px 0;
     display: flex;
