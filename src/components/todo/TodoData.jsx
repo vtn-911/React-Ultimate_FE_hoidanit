@@ -1,5 +1,5 @@
 const TodoData = (props) => {
-
+// Object destructuring
   const {todoList,deleteTodo} = props; 
   const handleClick = (id) =>{
     deleteTodo(id)

@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 
 function App() {
+  // Array destructuring
   const [todoList,setTodoList] = useState ([
     // mỗi một lần biến TodoList thay đổi thì thì ngay lập tức component TodoData sẽ thay đổi 
     // {id: 1, name: "Learning React"},
