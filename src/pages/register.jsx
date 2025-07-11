@@ -1,6 +1,13 @@
+import Footer from "../components/layout/footer";
+import Header from "../components/layout/header";
+
 const RegisterPage = () => {
     return (
-        <div>Register page</div>
+         <>
+            <Header/>
+            <div>Register Page</div>
+            <Footer/>
+        </>
     )
 }
 export default RegisterPage;

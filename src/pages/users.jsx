@@ -1,6 +1,13 @@
+import Footer from "../components/layout/footer";
+import Header from "../components/layout/header";
+
 const UsersPage = () => {
     return (
-        <div>Users page</div>
+        <>
+            <Header/>
+            <div>Users Page</div>
+            <Footer/>
+        </>
     )
 }
 

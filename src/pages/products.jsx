@@ -1,6 +1,13 @@
+import Footer from "../components/layout/footer";
+import Header from "../components/layout/header";
+
 const ProductsPage = () => {
     return (
-        <div>Products page</div>
+         <>
+            <Header/>
+            <div>Products Page</div>
+            <Footer/>
+        </>
     )
 }
 
