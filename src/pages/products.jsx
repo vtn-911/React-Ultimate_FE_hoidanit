@@ -4,9 +4,7 @@ import Header from "../components/layout/header";
 const ProductsPage = () => {
     return (
          <>
-            <Header/>
             <div>Products Page</div>
-            <Footer/>
         </>
     )
 }

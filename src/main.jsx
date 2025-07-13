@@ -15,6 +15,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    children: [ //Ràng buộc mối quan hệ cha con ( những component thằng con sẽ kế thừa layout của th cha)
+        {
+          path: "/users",
+          element: <UsersPage/>
+        },
+        {
+          path: "/products",
+          element: <ProductsPage/>
+        }
+    ]
   },
   {
     path: "/register",
@@ -23,14 +33,6 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage/>
-  },
-  {
-    path: "/users",
-    element: <UsersPage/>
-  },
-  {
-    path: "/products",
-    element: <ProductsPage/>
   }
 ]);
 

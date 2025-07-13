@@ -4,9 +4,7 @@ import Header from "../components/layout/header";
 const RegisterPage = () => {
     return (
          <>
-            <Header/>
             <div>Register Page</div>
-            <Footer/>
         </>
     )
 }
