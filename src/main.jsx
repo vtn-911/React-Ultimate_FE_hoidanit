@@ -10,12 +10,17 @@ import RegisterPage from './pages/register.jsx';
 import UsersPage from './pages/users.jsx';
 import ProductsPage from './pages/products.jsx';
 import "./style/global.css"
+import TodoApp from './components/todo/TodoApp.jsx';
 // Tích hợp Router & Cách tạo đường link dẫn đến trang khác
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
     children: [ //Ràng buộc mối quan hệ cha con ( những component thằng con sẽ kế thừa layout của th cha)
+        {
+          index: true,
+          element: <TodoApp/>
+        },
         {
           path: "/users",
           element: <UsersPage/>
