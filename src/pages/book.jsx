@@ -1,12 +1,12 @@
 import Footer from "../components/layout/footer";
 import Header from "../components/layout/header";
 
-const ProductsPage = () => {
+const BookPage = () => {
     return (
          <>
-            <div>Products Page</div>
+            <div>Book Page</div>
         </>
     )
 }
 
-export default ProductsPage;
+export default BookPage;

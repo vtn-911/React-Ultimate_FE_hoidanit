@@ -8,7 +8,7 @@ const Header = () => {
             {/* Link: cần điều hướng */}
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/users">Users</NavLink></li>
-            <li><NavLink to="/products">Products</NavLink></li>
+            <li><NavLink to="/book">Book</NavLink></li>
         </ul>
 
     )

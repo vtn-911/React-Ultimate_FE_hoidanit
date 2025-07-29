@@ -8,14 +8,16 @@ import {
 import LoginPage from './pages/login.jsx';
 import RegisterPage from './pages/register.jsx';
 import UsersPage from './pages/users.jsx';
-import ProductsPage from './pages/products.jsx';
+import BookPage from './pages/book.jsx';
 import "./style/global.css"
 import TodoApp from './components/todo/TodoApp.jsx';
+import ErrorPage from './pages/error.jsx';
 // Tích hợp Router & Cách tạo đường link dẫn đến trang khác
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <ErrorPage/>,
     children: [ //Ràng buộc mối quan hệ cha con ( những component thằng con sẽ kế thừa layout của th cha)
         {
           index: true,
@@ -26,8 +28,8 @@ const router = createBrowserRouter([
           element: <UsersPage/>
         },
         {
-          path: "/products",
-          element: <ProductsPage/>
+          path: "/book",
+          element: <BookPage/>
         }
     ]
   },
